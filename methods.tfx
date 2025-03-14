@@ -1,0 +1,26 @@
+<<$clear>>[8;28;88t[ [38;5;129mLayer-4 Non VIP[0m ]
+[0m [38;5;15m│ [38;5;15mudpv2[0m            [[38;2;255;183;0mUNPROT & PROT[0m[0m]  UDP Amplification With Randomized Strings.
+[0m [38;5;15m│ [38;5;15mtcp-amp[0m          [[38;2;255;183;0mUNPROT & PROT[0m[0m]  KillAllV4 Flood With TCP-BYPASS.
+[ [38;5;129mLayer-4 VIP[0m ]
+[0m [38;5;15m│ [38;5;15mgudp[0m             [[38;2;255;183;0mUNPROT & PROT[0m[0m]  Highly Amplified UDP Flood.
+[0m [38;5;15m│ [38;5;15mudp-bypass[0m       [[38;2;51;255;0mPROTECTED[0m[0m]      UDP Flood With Custom Payload.
+[0m [38;5;15m│ [38;5;15mudp-game[0m         [[38;2;51;255;0mGAME[0m[0m]           UDP PPS Flood With VSE Amplification.
+[0m [38;5;15m│ [38;5;15mdns-amp[0m          [[38;2;255;0;0mUNPROTECTED[0m[0m]    DNS Amplification Flood.
+[0m [38;5;15m│ [38;5;15mdiscord[0m          [[38;2;51;255;0mDISCORD[0m[0m]        Custom VoIP Payload For Discord calls.
+[0m [38;5;15m│ [38;5;15mhome[0m             [[38;2;255;0;0mUNPROTECTED[0m[0m]    DNS + ICMP Flood To Down homes.
+[ [38;5;129mLayer-7 Non VIP[0m ]
+[0m [38;5;15m│ [38;5;15mhttp-v2[0m          [[38;2;51;255;0mPROTECTED[0m[0m]      HTTP/2 Flood With Bypass.
+[0m [38;5;15m│ [38;5;15mhttp[0m             [[38;2;255;183;0mUNPROT & PROT[0m[0m]  Simple HTTP/1 Flood.
+[ [38;5;129mLayer-7 VIP[0m ]
+[0m [38;5;15m│ [38;5;15mtls[0m              [[38;2;255;183;0mUNPROT & PROT[0m[0m]  TLS Flood With Randomized User-Agents,Headers, Etc.
+[0m [38;5;15m│ [38;5;15mtlsv2[0m            [[38;2;51;255;0mPROTECTED[0m[0m]      Better Version Of Original TLS.
+[0m [38;5;15m│ [38;5;15mhttp-xv[0m          [[38;2;255;183;0mUNPROT & PROT[0m[0m]  Simple HTTPS Bypass For Some websites.
+[0m [38;5;15m│ [38;5;15mhttp-crf[0m         [[38;2;51;255;0mPROTECTED[0m[0m]      HTTPS Flood Made For Cloudflare Protected Targets.
+[0m [38;5;15m│ [38;5;15mhttp-bypass[0m      [[38;2;51;255;0mPROTECTED[0m[0m]      HTTPS Bypass For Other Providers.
+[ [38;5;129mSpecial Lone Methods[0m ]
+[0m [38;5;15m│ [38;5;15mudp-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           Custom UDP Bypass With GUDP.
+[0m [38;5;15m│ [38;5;15mtcp-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           Custom TCP Bypass Socket Flood.
+[0m [38;5;15m│ [38;5;15movh-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           3 Way Handshake With (SYN,ACK,PSH).
+[0m [38;5;15m│ [38;5;15mhttp-lone[0m        [[38;2;51;255;0mLONE[0m[0m]           Custom HTTPS Bypass For Most websites.
+[0m [38;5;15m│ [38;5;15msyn-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           SYN Bypass Flood.
+[0m [38;5;15m│ [38;5;15mnfo-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           TCP Bypass For NFO's.
