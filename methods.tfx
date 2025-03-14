@@ -1,26 +1,59 @@
-<<$clear>>[8;28;88t[ [38;5;129mLayer-4 Non VIP[0m ]
-[0m [38;5;15m│ [38;5;15mudpv2[0m            [[38;2;255;183;0mUNPROT & PROT[0m[0m]  UDP Amplification With Randomized Strings.
-[0m [38;5;15m│ [38;5;15mtcp-amp[0m          [[38;2;255;183;0mUNPROT & PROT[0m[0m]  KillAllV4 Flood With TCP-BYPASS.
-[ [38;5;129mLayer-4 VIP[0m ]
-[0m [38;5;15m│ [38;5;15mgudp[0m             [[38;2;255;183;0mUNPROT & PROT[0m[0m]  Highly Amplified UDP Flood.
-[0m [38;5;15m│ [38;5;15mudp-bypass[0m       [[38;2;51;255;0mPROTECTED[0m[0m]      UDP Flood With Custom Payload.
-[0m [38;5;15m│ [38;5;15mudp-game[0m         [[38;2;51;255;0mGAME[0m[0m]           UDP PPS Flood With VSE Amplification.
-[0m [38;5;15m│ [38;5;15mdns-amp[0m          [[38;2;255;0;0mUNPROTECTED[0m[0m]    DNS Amplification Flood.
-[0m [38;5;15m│ [38;5;15mdiscord[0m          [[38;2;51;255;0mDISCORD[0m[0m]        Custom VoIP Payload For Discord calls.
-[0m [38;5;15m│ [38;5;15mhome[0m             [[38;2;255;0;0mUNPROTECTED[0m[0m]    DNS + ICMP Flood To Down homes.
-[ [38;5;129mLayer-7 Non VIP[0m ]
-[0m [38;5;15m│ [38;5;15mhttp-v2[0m          [[38;2;51;255;0mPROTECTED[0m[0m]      HTTP/2 Flood With Bypass.
-[0m [38;5;15m│ [38;5;15mhttp[0m             [[38;2;255;183;0mUNPROT & PROT[0m[0m]  Simple HTTP/1 Flood.
-[ [38;5;129mLayer-7 VIP[0m ]
-[0m [38;5;15m│ [38;5;15mtls[0m              [[38;2;255;183;0mUNPROT & PROT[0m[0m]  TLS Flood With Randomized User-Agents,Headers, Etc.
-[0m [38;5;15m│ [38;5;15mtlsv2[0m            [[38;2;51;255;0mPROTECTED[0m[0m]      Better Version Of Original TLS.
-[0m [38;5;15m│ [38;5;15mhttp-xv[0m          [[38;2;255;183;0mUNPROT & PROT[0m[0m]  Simple HTTPS Bypass For Some websites.
-[0m [38;5;15m│ [38;5;15mhttp-crf[0m         [[38;2;51;255;0mPROTECTED[0m[0m]      HTTPS Flood Made For Cloudflare Protected Targets.
-[0m [38;5;15m│ [38;5;15mhttp-bypass[0m      [[38;2;51;255;0mPROTECTED[0m[0m]      HTTPS Bypass For Other Providers.
-[ [38;5;129mSpecial Lone Methods[0m ]
-[0m [38;5;15m│ [38;5;15mudp-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           Custom UDP Bypass With GUDP.
-[0m [38;5;15m│ [38;5;15mtcp-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           Custom TCP Bypass Socket Flood.
-[0m [38;5;15m│ [38;5;15movh-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           3 Way Handshake With (SYN,ACK,PSH).
-[0m [38;5;15m│ [38;5;15mhttp-lone[0m        [[38;2;51;255;0mLONE[0m[0m]           Custom HTTPS Bypass For Most websites.
-[0m [38;5;15m│ [38;5;15msyn-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           SYN Bypass Flood.
-[0m [38;5;15m│ [38;5;15mnfo-lone[0m         [[38;2;51;255;0mLONE[0m[0m]           TCP Bypass For NFO's.
+<<$clear>>[8;60;160t[ [38;5;129mLayer 7 Non-VIP Methods[0m ]
+[0m [38;5;15m│ [38;5;15mhttps[0m                   [[38;2;255;183;0mUNPROT & PROT[0m[0m]   Simple Javascript HTTP/2 & HTTP/1 Website Flood.
+[0m [38;5;15m│ [38;5;15mhttp-xv[0m                 [[38;2;51;255;0mPROTECTED[0m[0m]       Golang HTTP/2 Cloudflare Ratelimit & Custom Rule Bypass.
+[0m [38;5;15m│ [38;5;15mtls[0m                     [[38;2;51;255;0mPROTECTED[0m[0m]       Javascript HTTP/2 Flood: TLS Queries with Multiple User Agents. Referrers, and Headers.
+[ [38;5;129mLayer 7 VIP Methods[0m ]
+[0m [38;5;15m│ [38;5;15mhttp-bypass[0m             [[38;2;51;255;0mPROTECTED[0m[0m]       Javascript HTTP/2 Flood That Can Bypass Cloudflare HTTP-DDoS & WAF & Ratelimit.
+[0m [38;5;15m│ [38;5;15mhttp-browser[0m            [[38;2;51;255;0mPROTECTED[0m[0m]       Javascript HTTP/2 Flood That Bypasses UAM & Captcha By Impersonating A Real User & Browser.
+[0m [38;5;15m│ [38;5;15mhttp-rapid[0m              [[38;2;255;183;0mUNPROT & PROT[0m[0m]   Javascript HTTP/2 Rapid Reset Flood That Spam Resets the Cookies & Connections.
+[ [38;5;129mLayer 4 Non-VIP Methods[0m ]
+[0m [38;5;15m│ [38;5;15mudp-gbps[0m                [[38;2;255;0;0mUNPROTECTED[0m[0m]     DNS Amplification With a Large Byte Size & A Raw UDP Flood.
+[0m [38;5;15m│ [38;5;15mudpbypass[0m               [[38;2;51;255;0mPROTECTED[0m[0m]       Large Amount of Valid Randomized UDP Data & A Custom UDP Payload.
+[0m [38;5;15m│ [38;5;15mtcpbypass[0m               [[38;2;51;255;0mPROTECTED[0m[0m]       Custom TCP & HANDSHAKE Flood For Bypassing,GBPS,PPS.
+[0m [38;5;15m│ [38;5;15msocket-tcp[0m              [[38;2;51;255;0mPROTECTED[0m[0m]       Socket Flood That sends Half Open Connections With (SYN,ACK).
+[0m [38;5;15m│ [38;5;15mack-xv[0m                  [[38;2;255;183;0mUNPROT & PROT[0m[0m]   ACK Flood that Sends High Amounts of ACK Packets.
+[0m [38;5;15m│ [38;5;15mhome[0m                    [[38;2;255;0;0mUNPROTECTED[0m[0m]     TCP+UDP Flood that sends (DNS,ICMP,SYN) To Down Homes.
+[0m [38;5;15m│ [38;5;15mssh[0m                     [[38;2;255;0;0mUNPROTECTED[0m[0m]     PuTTY SSH Socket Flood Using Legitimate SSH Data, Kill Port 22 & Port SSH.
+[0m [38;5;15m│ [38;5;15mstunv2[0m                  [[38;2;255;183;0mUNPROT & PROT[0m[0m]   Stun Flood For Game firewalls.
+[ [38;5;129mLayer 4 VIP Methods[0m ]
+[0m [38;5;15m│ [38;5;15mudp-game[0m                [[38;2;51;255;0mGAME SERVERS[0m[0m]    PPS & udpplain Flood for games.
+[0m [38;5;15m│ [38;5;15mgudp[0m                    [[38;2;51;255;0mPROTECTED[0m[0m]       DNS Amplification Flood + High Len Raw UDP Flood (IoT).
+[0m [38;5;15m│ [38;5;15mmc-socket[0m               [[38;2;51;255;0mPROTECTED[0m[0m]       Sends Oversized SYN Packets With Proxys.
+[0m [38;5;15m│ [38;5;15msyn-comb[0m                [[38;2;255;183;0mUNPROT & PROT[0m[0m]   Handshake Flood With SYN & Half Open Connections.
+[0m [38;5;15m│ [38;5;15mdiscord[0m                 [[38;2;51;255;0mDISCORD CALLS[0m[0m]   VoIP Discord Flood With Static Data & RTC Data.
+[0m [38;5;15m│ [38;5;15msubnet[0m                  [[38;2;51;255;0mPROTECTED[0m[0m]       Custom DNS,MIXAMP Flood For Bypassing,GBPS,PPS.
+[0m [38;5;15m│ [38;5;15mgreip[0m                   [[38;2;51;255;0mPROTECTED[0m[0m]       Custom GRE Flood For Bypassing,GBPS,PPS.
+[0m [38;5;15m│ [38;5;15mgreeth[0m                  [[38;2;51;255;0mPROTECTED[0m[0m]       Custom GREETH Flood For Bypassing,GBPS,PPS.
+[0m [38;5;15m│ [38;5;15mserverboom[0m              [[38;2;51;255;0mPROTECTED[0m[0m]       Custom TCP Flood For Bypassing,GBPS,PPS.
+[0m [38;5;15m│ [38;5;15mholder[0m                  [[38;2;51;255;0mPROTECTED[0m[0m]       TCP+UDP Flood that sends (DNS,ICMP,SYN,MIXAMP) Flood For Bypassing,GBPS,PPS.
+[ [38;5;129mGame Methods Non-VIP[0m ]
+[0m [38;5;15m│ [38;5;15mfn-lag[0m                  [[38;2;51;255;0mGAME SERVERS[0m[0m]    Stun & High PPS UDP Flood For Fortnite.
+[0m [38;5;15m│ [38;5;15mmw-cod[0m                  [[38;2;51;255;0mGAME SERVERS[0m[0m]    PPS & GBPS Flood For COD.
+[0m [38;5;15m│ [38;5;15munturned[0m                [[38;2;51;255;0mGAME SERVERS[0m[0m]    PPS & Raw UDP Flood for Unturned.
+[0m [38;5;15m│ [38;5;15mamongus[0m                 [[38;2;51;255;0mGAME SERVERS[0m[0m]    Raw UDP Flood & Stun.
+[0m [38;5;15m│ [38;5;15mapex[0m                    [[38;2;51;255;0mGAME SERVERS[0m[0m]    High PPS & Stun + Raw UDP Flood.
+[0m [38;5;15m│ [38;5;15mbf-spazz[0m                [[38;2;51;255;0mGAME SERVERS[0m[0m]    High GBPS & High PPS.
+[ [38;5;129mGame Methods VIP[0m ]
+[0m [38;5;15m│ [38;5;15mmw-out[0m                  [[38;2;51;255;0mGAME SERVERS[0m[0m]    PPS & GBPS Flood For COD.
+[0m [38;5;15m│ [38;5;15mrl-beta[0m                 [[38;2;51;255;0mGAME SERVERS[0m[0m]    DNS Amplification & Raw UDP Flood.
+[0m [38;5;15m│ [38;5;15moverwatch[0m               [[38;2;51;255;0mGAME SERVERS[0m[0m]    PPS & GBPS Flood For Overwatch.
+[0m [38;5;15m│ [38;5;15mabi-kill[0m                [[38;2;51;255;0mGAME SERVERS[0m[0m]    PPS & GBPS Flood For Arena Breakout Infinite.
+[0m [38;5;15m│ [38;5;15meft-kill[0m                [[38;2;51;255;0mGAME SERVERS[0m[0m]    PPS & GBPS Flood For Escape From Tarkov.
+[0m [38;5;15m│ [38;5;15mrust[0m                    [[38;2;51;255;0mGAME SERVERS[0m[0m]    PPS & GBPS Flood For Rust.
+[0m [38;5;15m│ [38;5;15mr6-beta[0m                 [[38;2;51;255;0mGAME SERVERS[0m[0m]    High PPS,High GBPS With Stun & Custom UDP Payload.
+[0m [38;5;15m│ [38;5;15mroblox[0m                  [[38;2;51;255;0mGAME SERVERS[0m[0m]    High PPS Flood For Non-UDMUX/Non-TMUX Servers.
+[ [38;5;129mLayer 4 Botnet Methods[0m ]
+[0m [38;5;15m│ [38;5;15mbotnet-udp[0m              [[38;2;255;0;0mPROTECTED & RAW[0m[0m]     UDP flood optimized for Bypassing,GBPS,PPS & High GBPS & Raw UDP Flood (IoT).
+[0m [38;5;15m│ [38;5;15mbotnet-udpbypass[0m        [[38;2;255;0;0mPROTECTED & RAW[0m[0m]     UDP flood & udpplain optimized for Bypassing,GBPS,PPS & Raw UDP Flood (IoT).
+[0m [38;5;15m│ [38;5;15mbotnet-tcp[0m              [[38;2;255;0;0mPROTECTED & RAW[0m[0m]     TCP floods mixing (SYN,ACK,RST) flags For Bypassing,GBPS,PPS & Raw TCP Flood (IoT).
+[0m [38;5;15m│ [38;5;15mbotnet-ack[0m              [[38;2;255;0;0mPROTECTED & RAW[0m[0m]     ACK flag Floods Flood For Bypassing,GBPS,PPS & Raw ACK Flood (IoT).
+[0m [38;5;15m│ [38;5;15mbotnet-syn[0m              [[38;2;255;0;0mPROTECTED & RAW[0m[0m]     SYN Flood With A Socket Flood for bypassing & Raw SYN Flood (IoT).   
+[0m [38;5;15m│ [38;5;15mbotnet-pps[0m              [[38;2;255;0;0mPROTECTED & RAW[0m[0m]     UDP FRAG Packet Flood For Bypassing,GBPS,PPS & High PPS & Raw UDP Flood (IoT).
+[ [38;5;129mSpecial Saturn Methods[0m ]
+[0m [38;5;15m│ [38;5;15mudp-saturn[0m              [[38;2;51;255;0mPROTECTED[0m[0m]       Custom UDP Flood For Bypassing,GBPS,PPS.
+[0m [38;5;15m│ [38;5;15mtcp-saturn[0m              [[38;2;51;255;0mPROTECTED[0m[0m]       Custom TCP Flood For Bypassing,GBPS,PPS.
+[0m [38;5;15m│ [38;5;15mdns-saturn[0m              [[38;2;51;255;0mPROTECTED[0m[0m]       DNS Amplification Flood.
+[0m [38;5;15m│ [38;5;15movh-saturn[0m              [[38;2;51;255;0mPROTECTED[0m[0m]       3-Way Handshake Flood Using (ACK,PSH,SYN) For OVH.
+[0m [38;5;15m│ [38;5;15mgame-saturn[0m             [[38;2;51;255;0mPROTECTED[0m[0m]       Custom UDP Game Flood For Most games Based on PPS.
+[0m [38;5;15m│ [38;5;15mhttp-saturn[0m             [[38;2;51;255;0mPROTECTED[0m[0m]       Javascript HTTP/2 & HTTP/1 That Can Bypass Most Host/Anti-DDoS.
+[0m [38;5;15m│ [38;5;15msyn-saturn[0m              [[38;2;51;255;0mPROTECTED[0m[0m]       SYN Flood With A Giant Amount of SYN With A Socket Flood for bypassing.
